@@ -1,3 +1,5 @@
+//Below is the Main Code-Piece for Categorizing the Highscores in a JSON
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
