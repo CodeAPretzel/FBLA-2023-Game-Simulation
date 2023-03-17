@@ -1,4 +1,4 @@
-# FBLA-2023-Computer-Programming-Game
+# FBLA 2023 Computer Programming Game
 <br>
 This is a game simulation for the 2022-2023 FBLA Game Simulation competition.
 <br>
