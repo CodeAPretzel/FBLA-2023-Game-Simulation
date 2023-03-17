@@ -148,7 +148,7 @@ Library: lib_burst_generated
 --compilation-defines=CINEMACHINE_UNITY_IMGUI
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
---linker-options=PdbAltPath="Wordle_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Sorcerer-Word_Data/Plugins/x86_64"
 --generate-link-xml=Temp\burst.link.xml
 --output=C:\Users\Kyle\Documents\Projects\Unity\Wordle Game\Wordle\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=C:\Users\Kyle\Documents\Projects\Unity\Wordle Game\Wordle\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
@@ -338,7 +338,7 @@ Library: lib_burst_generated
 --compilation-defines=CINEMACHINE_UNITY_IMGUI
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
---linker-options=PdbAltPath="Wordle_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Sorcerer-Word_Data/Plugins/x86_64"
 --generate-link-xml=Temp\burst.link.xml
 --output=C:\Users\Kyle\Documents\Projects\Unity\Wordle Game\Wordle\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=C:\Users\Kyle\Documents\Projects\Unity\Wordle Game\Wordle\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
