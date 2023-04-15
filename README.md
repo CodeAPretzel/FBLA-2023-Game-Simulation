@@ -50,9 +50,9 @@ Some of the assets used in the game belong to the owner of source and are compat
 <h2>Game Future Developments :ballot_box_with_check:</h2>
 <br>
 
-- [ ] Fixing Errors for the Leaderboard
-- [ ] Improving User Experience in the Game's Environment
-- [ ] Improving Composition on Music and SFX
+- [x] Fixing Errors for the Leaderboard
+- [x] Improving User Experience in the Game's Environment
+- [x] Improving Composition on Music and SFX
 - [ ] Adding Polishing Details for Boss Battle
 - [ ] Adding Polishing Details for the Wordle Aspect
 - [ ] Generalization of Multiple Levels and Experiences
