@@ -34,7 +34,7 @@ Within the game, you will find that the forest world of the main character is be
 <h2>Game Download :pushpin::</h2>
 <br>
 
-Downloading the game requires that all files are downloaded. To download the game, go to the top of this repo. and hit `Code` and download the files as a .zip. After downloading the .zip, extract its contents and execute `Sorcerer-Word.exe`.
+Executing the game requires that all files are downloaded. To download the game, go to the top of this repo. and hit `Code` and download the files as a .zip. After downloading the .zip, extract the contents and execute `Sorcerer-Word.exe`.
 
 <br>
 <br>
