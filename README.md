@@ -5,10 +5,12 @@
 </div>
 
 <br>
-This file will show the main parts of the game simulation "Sorcerer Word." Within the file are the current sections:
+
+![Main Menu](./GitAssets/thumbNailGame.png?raw=true "Main Menu")
 
 <br>
-<br>
+
+This file will show the main parts of the game simulation "Word Sorcerer." Within the file are the current sections:
 
 <ul>
   <li>Game About :file_folder:</li>
