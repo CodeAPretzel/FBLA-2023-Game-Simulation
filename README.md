@@ -6,6 +6,12 @@
 
 <br>
 
+<p align="center">
+  | &nbsp &nbsp &nbsp By Kyle Smith &nbsp &nbsp &nbsp |
+</p>
+
+<br>
+
 ![Main Menu](./GitAssets/thumbNailGame.png?raw=true "Main Menu")
 
 <br>
