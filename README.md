@@ -13,14 +13,16 @@
 This file will show the main parts of the game simulation "Word Sorcerer." Within the file are the current sections:
 
 <ul>
-  <li>Game About :file_folder:</li>
-  <li>Game Download :pushpin:</li>
-  <li>Game Recognition :sparkles:</li>
-  <li>Game Future Developments :ballot_box_with_check::</li>
+  <li><a href="#game-about">Game About :file_folder:</a></li>
+  <li><a href="#game-download">Game Download :pushpin:</a></li>
+  <li><a href="#game-inner-workings">Game Inner Workings :gear:</a></li>
+  <li><a href="#game-recognition">Game Recognition :sparkles:</a></li>
+  <li><a href="#game-future-developments">Game Future Developments :ballot_box_with_check:</a></li>
 </ul>
 
 <br>
 
+<a name="game-about"></a>
 <h2>Game About :file_folder::</h2>
 <br>
 
@@ -33,6 +35,7 @@ Within the game, you will find that the forest world of the main character is be
 <br>
 <br>
 
+<a name="game-download"></a>
 <h2>Game Download :pushpin::</h2>
 <br>
 
@@ -41,14 +44,27 @@ Executing the game requires that all files are downloaded. To download the game,
 <br>
 <br>
 
+<a name="game-inner-workings"></a>
+<h2>Game Inner Workings :gear:</h2>
+<br>
+
+Some Text
+
+<br>
+<br>
+
+<a name="game-recognition"></a>
 <h2>Game Recognition :sparkles:</h2>
 <br>
 
 Some of the assets used in the game belong to the owner of source and are compatible with *ROYALTY FREE LICENSE*. Credit to these authors are provided within the game's credit section.
 
+Licensing is under the GNU Affero General Public License v3.0. `<a href"">More Info</a>`
+
 <br>
 <br>
 
+<a name="game-future-developments"></a>
 <h2>Game Future Developments :ballot_box_with_check:</h2>
 <br>
 
