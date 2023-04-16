@@ -19,8 +19,9 @@
 This file will show the main parts of the game simulation "Word Sorcerer." Within the file are the current sections:
 
 <ul>
-  <li><a href="#game-about">Game About :file_folder:</a></li>
-  <li><a href="#game-download">Game Download :pushpin:</a></li>
+  <li><a href="#game-about">Game About 📜</a></li>
+  <li><a href="#game-requirements">Game Requirements 📑</a></li>
+  <li><a href="#game-download">Game Download 🔧</a></li>
   <li><a href="#game-inner-workings">Game Inner Workings :gear:</a></li>
   <li><a href="#game-recognition">Game Recognition :sparkles:</a></li>
   <li><a href="#game-future-developments">Game Future Developments :ballot_box_with_check:</a></li>
@@ -29,7 +30,7 @@ This file will show the main parts of the game simulation "Word Sorcerer." Withi
 <br>
 
 <a name="game-about"></a>
-<h2>Game About :file_folder::</h2>
+<h2>Game About 📜</h2>
 <br>
 
 This game is based on the popular mobile game <a href="https://www.nytimes.com/games/wordle/index.html">`Wordle`</a> with a little bit of inspiration of Final Fantasy VI's attacking system for the boss battle.
@@ -43,8 +44,28 @@ Within the game, you will find that the forest world of the main character is be
 <br>
 <br>
 
+<a name="game-requirements"></a>
+<h2>Game Requirements 📑</h2>
+<br>
+
+This game meets the requirements illustrated in the guidlines here: <a href="https://www.fbla-pbl.org/fbla-topics/">FBLA GUIDELINES</a>
+
+- [x] The game should be an executable game, either through the Internet or through a local installation.
+  - Game can be played through an installation.
+- [x] The game should contain a scoreboard.
+  - Game contains a scoreboard that can be viewed at any time.
+- [x] The game should contain a leaderboard and celebratory messages.
+  - Game contains a live leaderboard so you can see other player's scores. Player receives a message when entering their name for the leaderboard.
+- [x] The game should have a minimum of three levels.
+  - Game's difficulty increases slightly after defeated the boss.
+- [x] The game should have an instructional display.
+  - Players can view how to play at the beginning of the play.
+
+<br>
+<br>
+
 <a name="game-download"></a>
-<h2>Game Download :pushpin::</h2>
+<h2>Game Download 🔧</h2>
 <br>
 
 Steps for downloading and executing the game:
@@ -79,7 +100,7 @@ One of the core factors in <i>Word Sorcerer</i> is the leaderboard. Using <a hre
 
 <h3>
   <p align="center">
-    - &nbsp Below I've Illustrated the Layout to Gain this Response  &nbsp -
+    - &nbsp Illustration of Response &nbsp -
   </p>
 </h3>
 <br>
