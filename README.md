@@ -67,7 +67,7 @@ Steps for downloading and executing the game:
 <h2>Game Inner Workings :gear:</h2>
 <br>
 
-One of the core factors in <i>Word Sorcerer</i> is the leaderboard. Using <a href="https://lootlocker.com/?gclid=CjwKCAjwue6hBhBVEiwA9YTx8EQW2c-GlN_UVjrRAPVk0_OmgoPnOADHqUkqmBgvlgIe3FeFSEqXvhoCGpMQAvD_BwE">Lootlocker's</a> API system, we are able to manage a live server that will continue to update the leaderboard, giving the most recent results of players.
+One of the core factors in <i>Word Sorcerer</i> is the leaderboard. Using <a href="https://lootlocker.com/?gclid=CjwKCAjwue6hBhBVEiwA9YTx8EQW2c-GlN_UVjrRAPVk0_OmgoPnOADHqUkqmBgvlgIe3FeFSEqXvhoCGpMQAvD_BwE">`Lootlocker's`</a> API system, we are able to manage a live server that will continue to update the leaderboard, giving the most recent results of players.
 <br>
 <br>
 
