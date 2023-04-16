@@ -42,11 +42,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate() {
         
         if (!lockingMovement && moveInput != Vector2.zero){
-            //Move animation and add velocity
-
-            //Accelerate the player while run direction is pressed
-            //Don't allow player to run faster than the max speed in any direction
-            
             //Disable Knockback:
             rb.velocity = Vector2.ClampMagnitude((rb.velocity / 2) + (moveInput * moveSpeed * Time.fixedDeltaTime), maxSpeed);
             
