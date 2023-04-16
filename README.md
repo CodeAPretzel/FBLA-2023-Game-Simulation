@@ -47,7 +47,7 @@ Steps for downloading and executing the game:
    1. First Method:
       - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the .zip of the entire directory into you local system using the `Code` menu in the top-right corner.
       - `Extract all` from the .zip.
-      - Open the folder and go to the executable `Word-Sorcerer.exe` and execute it.
+      - Open the folder<b>(s)</b> and go to the executable `Word-Sorcerer.exe` and execute it.
       - The game will now begin!
   
    2. Second Method:
