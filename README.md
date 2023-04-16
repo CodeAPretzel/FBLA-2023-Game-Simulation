@@ -41,14 +41,17 @@ Within the game, you will find that the forest world of the main character is be
 <h2>Game Download :pushpin::</h2>
 <br>
 
-Steps for download and executing the game:
+Steps for downloading and executing the game:
 
-<ol>
-  <li>Game is only compatible with `Windows`, `Linux`, and `MacOS`</li>
-  <li>First Method:</li>
-    - Go to the folder `Word Sorcerer` and pull the entire folder into you local system.
-    - Open the folder and go to the executable ``
-</ol>
+  - [x] Game is only compatible with `Windows`, `Linux`, and `MacOS`
+   1. First Method:
+      - Go to the folder `Word Sorcerer` and pull the entire folder into you local system.
+      - Open the folder and go to the executable `Word-Sorcerer.exe` and execute it.
+      - The game will now begin!
+  
+   2. Second Method:
+      - Make a `git pull request` from the folder.
+      - Use the following request to pull the `Word Sorcerer` folder: ``
 
 <br>
 <br>
