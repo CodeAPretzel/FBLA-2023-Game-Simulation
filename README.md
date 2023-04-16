@@ -52,6 +52,7 @@ Steps for downloading and executing the game:
   
    2. Second Method:
       - Make a `git clone request` from the folder.
+      - Will require a git terminal <i> - ex. linux terminal -</i>.
       - Use the following request to pull the `Word Sorcerer` folder:
       <br>
       
@@ -66,7 +67,22 @@ Steps for downloading and executing the game:
 <h2>Game Inner Workings :gear:</h2>
 <br>
 
-Some Text
+One of the core factors in <i>Word Sorcerer</i> is the leaderboard. Using <a href="https://lootlocker.com/?gclid=CjwKCAjwue6hBhBVEiwA9YTx8EQW2c-GlN_UVjrRAPVk0_OmgoPnOADHqUkqmBgvlgIe3FeFSEqXvhoCGpMQAvD_BwE">Lootlocker's</a> API system, we are able to manage a live server that will continue to update the leaderboard, giving the most recent results of players.
+<br>
+<br>
+
+<h3>
+  <p align="center">
+    - &nbsp Below I've Illustrated the Layout to Gain this Response  &nbsp -
+  </p>
+</h3>
+<br>
+
+<b>
+  <p align="center">
+    Lootlocker API &nbsp --> &nbsp Server Requests API Keys &nbsp --> &nbsp Set and Display Metadata Gained to Player
+  </p>
+</b>
 
 <br>
 <br>
@@ -75,7 +91,7 @@ Some Text
 <h2>Game Recognition :sparkles:</h2>
 <br>
 
-Some of the assets used in the game belong to the owner of source and are compatible with *ROYALTY FREE LICENSE*. Credit to these authors are provided within the game's credit section.
+Some of the assets used in the game belong to the owner of source and are compatible with <a href="https://creativecommons.org/licenses/by/4.0/">`Attribution 4.0 International (CC BY 4.0)`</a> or <a href="https://creativecommons.org/licenses/by-nc/4.0/">`Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)`</a>. Credit to these authors are provided within the game's credit section.
 <!--><li></li><br>
 
 --> Licensing is under the GNU Affero General Public License v3.0.
