@@ -56,7 +56,7 @@ Steps for downloading and executing the game:
       <br>
       
       ```
-      git clone https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game.git
+      git clone -b pull-game https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation.git
       ```
 
 <br>
