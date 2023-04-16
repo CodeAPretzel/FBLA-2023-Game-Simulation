@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
             //Move animation and add velocity
 
             //Accelerate the player while run direction is pressed
-            //BUT don't allow player to run faster than the max speed in any direction
+            //Don't allow player to run faster than the max speed in any direction
             
             //Disable Knockback:
             rb.velocity = Vector2.ClampMagnitude((rb.velocity / 2) + (moveInput * moveSpeed * Time.fixedDeltaTime), maxSpeed);
