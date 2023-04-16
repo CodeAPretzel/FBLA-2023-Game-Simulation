@@ -1,118 +1,80 @@
-//Below is the Main Code-Piece for Categorizing the Highscores in a JSON
+//Below is the guidance for retrieving Lootlocker's API keys and login the player into their system.
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using LootLocker.Requests;
 
-public class HighscoreTable : MonoBehaviour
+public class LeaderboardManager : MonoBehaviour
 {
-    public Transform entryContainer;
-    public Transform entryTemplate;
+    public TextMeshProUGUI rankField;
+    public TextMeshProUGUI nameField;
+    public TextMeshProUGUI scoreField;
 
-    private List<Transform> highscoreEntryTransformList;
+    // Start is called before the first frame update
+    void Start()
+    {
+        StartCoroutine(SetupRoutine());
+    }
     
-    private void Awake() {
-        
-        entryContainer = entryContainer.GetComponent<Transform>();
-        entryTemplate = entryTemplate.GetComponent<Transform>();
-        
-        string jsonString = PlayerPrefs.GetString("HighscoreTable");
-        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
-        
-        //Sort entry list by score
-        for (int i = 0; i < highscores.highscoreEntryList.Count; i++){
-            for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++){
-                if (highscores.highscoreEntryList[j].score > highscores.highscoreEntryList[i].score){
-                    //Swap
-                    HighscoreEntry tmp = highscores.highscoreEntryList[i];
-                    highscores.highscoreEntryList[i] = highscores.highscoreEntryList[j];
-                    highscores.highscoreEntryList[j] = tmp;
+    IEnumerator SetupRoutine(){
+        //Login to Lootlocker
+        yield return LoginRoutine();
+
+        //Set Highscores to Leaderboard UI
+        yield return FetchTopHighscoresRoutine();
+    }
+
+    IEnumerator LoginRoutine(){
+        bool done = false;
+        LootLockerSDKManager.StartGuestSession((response) => {
+            if (response.success){
+                Debug.Log("Player was logged in");
+                PlayerPrefs.SetString("PlayerID", response.player_id.ToString());
+                done = true;
+            } else {
+                Debug.Log("Failed login: " + response.Error);
+                done = true;
+            }
+        });
+        yield return new WaitWhile(() => done == false);
+    }
+
+    IEnumerator FetchTopHighscoresRoutine(){
+        bool done = false;
+        LootLockerSDKManager.GetScoreList("globalHighscore", 5, 0, (response) => {
+            if (response.success){
+                string tempPlayerNames = "";
+                string tempPlayerScores = "";
+                string tempPlayerRank = "";
+
+                LootLockerLeaderboardMember[] members = response.items;
+
+                //Setup for Leaderboard
+                for (int i = 0; i < members.Length; i++){
+                    tempPlayerRank += members[i].rank + ".\n\n";
+
+                    if (members[i].player.name != ""){
+                        tempPlayerNames += members[i].player.name;
+                    } else {
+                        tempPlayerNames += members[i].player.id;
+                    }
+
+                    tempPlayerScores += members[i].score + "\n\n";
+                    tempPlayerNames += "\n\n";
                 }
+                done = true;
+
+                rankField.text = tempPlayerRank;
+                nameField.text = tempPlayerNames;
+                scoreField.text = tempPlayerScores;
+            } else {
+                Debug.Log("Failed: " + response.Error);
+                done = true;
             }
-        }
-
-        if (highscores.highscoreEntryList.Count > 5){
-            for (int h = highscores.highscoreEntryList.Count; h>5; h--){
-                highscores.highscoreEntryList.RemoveAt(5);
-            }
-        }
-
-        highscoreEntryTransformList = new List<Transform>();
-        foreach (HighscoreEntry highscoreEntry in highscores.highscoreEntryList){
-            CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
-        }
+        });
+        yield return new WaitWhile(() => done == false);
     }
 
-    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList){
-
-        float templateHeight = 60f;
-
-        Transform entryTransform = Instantiate(entryTemplate, container);
-        RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
-        entryTransform.name = entryTransform.name.Replace("(Clone)","").Trim();
-        entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
-        entryTransform.gameObject.SetActive(true);
-
-        int rank = transformList.Count + 1;
-        string rankString;
-        switch (rank){
-            default:
-                rankString = rank + "TH"; break;
-
-            case 1: rankString = "1ST"; break;
-            case 2: rankString = "2ND"; break;
-            case 3: rankString = "3RD"; break;
-        }
-
-        //Rank
-        entryTransform.Find("rankField").GetComponent<TextMeshProUGUI>().text = rankString;
-
-        //Name
-        string name = highscoreEntry.name;
-        entryTransform.Find("nameField").GetComponent<TextMeshProUGUI>().text = name;
-        
-        //Score
-        int score = highscoreEntry.score;
-        entryTransform.Find("pointField").GetComponent<TextMeshProUGUI>().text = score.ToString();
-
-        //Highlight first rank
-        if (rank == 1){
-            entryTransform.Find("nameField").GetComponent<TextMeshProUGUI>().color = Color.red;
-            entryTransform.Find("rankField").GetComponent<TextMeshProUGUI>().color = Color.red;
-            entryTransform.Find("pointField").GetComponent<TextMeshProUGUI>().color = Color.red;
-        }
-
-        transformList.Add(entryTransform);
-    }
-
-    //Adding new entries for the json list
-    public void AddHighscoreEntry(int score, string name){
-        //Create HighscoreEntry
-        HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name};
-
-        //Load saved Highscores
-        string jsonString = PlayerPrefs.GetString("HighscoreTable");
-        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
-
-        //Add new entry to Highscores
-        highscores.highscoreEntryList.Add(highscoreEntry);
-
-        //Save updated Highscores
-        string json = JsonUtility.ToJson(highscores);
-        PlayerPrefs.SetString("HighscoreTable", json);
-        PlayerPrefs.Save();
-    }
-
-    private class Highscores {
-        public List<HighscoreEntry> highscoreEntryList;
-    }
-
-    //Represents a single high score entry
-    [System.Serializable]
-    private class HighscoreEntry {
-        public int score;
-        public string name;
-    }
 }
