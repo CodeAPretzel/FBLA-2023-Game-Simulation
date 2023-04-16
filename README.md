@@ -45,7 +45,8 @@ Steps for downloading and executing the game:
 
   - [x] Game is only compatible with `Windows`, `Linux`, and `MacOS`
    1. First Method:
-      - Go to the folder `Word Sorcerer` and pull the entire folder into you local system.
+      - Go to the branch `pull-game` and pull the .zip of the entire directory into you local system using the `Code` menu in the top-right corner.
+      - `Extract all` from the .zip.
       - Open the folder and go to the executable `Word-Sorcerer.exe` and execute it.
       - The game will now begin!
   
