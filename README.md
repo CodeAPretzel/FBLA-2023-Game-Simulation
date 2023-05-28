@@ -7,7 +7,7 @@
 <br>
 
 <p align="center">
-  | &nbsp &nbsp &nbsp By Kyle Smith &nbsp &nbsp &nbsp |
+  | &nbsp &nbsp &nbsp Kyle Smith &nbsp &nbsp &nbsp |
 </p>
 
 <br>
