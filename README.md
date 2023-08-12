@@ -84,7 +84,7 @@ Steps for downloading and executing the game:
       <br>
       
       ```
-      git clone -b pull-game github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/main/Word%20Sorcerer
+      git clone -b pull-game github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/main/Word%20Sorcerer test
       ```
 
 <br>
