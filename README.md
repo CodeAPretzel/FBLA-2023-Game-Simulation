@@ -57,7 +57,7 @@ This game meets the requirements illustrated in the guidlines here: <a href="htt
 - [x] The game should contain a leaderboard and celebratory messages.
   - Game contains a live leaderboard so you can see other player's scores. Player receives a message when entering their name for the leaderboard.
 - [x] The game should have a minimum of three levels.
-  - Game's difficulty increases slightly after defeated the boss.
+  - Game's difficulty increases slightly after defeating the boss.
 - [x] The game should have an instructional display.
   - Players can view how to play at the beginning of the play.
 
