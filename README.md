@@ -72,15 +72,16 @@ Steps for downloading and executing the game:
 
   - [x] Game is only compatible with `Windows`, `Linux`, and `MacOS`
    1. First Method:
-      - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the .zip of the entire directory into you local system using the `Code` menu in the top-right corner.
+      - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the .zip of the entire branch into your local system using the `Code` menu in the top-right corner.
       - `Extract all` from the .zip.
-      - Open the folder<b>(s)</b> and go to the executable `Word-Sorcerer.exe` and execute it.
-      - The game will now begin!
+      - Open the folder and go to the executable `Word Sorcerer Setup_x86-x64.exe` and execute it.
+      - Then follow the instructions on your screen.
+      - Finally, you can play!
   
    2. Second Method:
       - Make a `git clone request` from the folder.
-      - Will require a git terminal <i> - ex. linux terminal -</i>.
-      - Use the following request to pull the `Word Sorcerer` folder:
+      - Will require <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>.
+      - Use the following request to pull the `Word Sorcerer` folder and execute `Word Sorcerer Setup_x86-x64.exe`:
       <br>
       
       ```
