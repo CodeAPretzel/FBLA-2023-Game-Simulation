@@ -70,7 +70,7 @@ This game meets the requirements illustrated in the guidlines here: <a href="htt
 
 Steps for downloading and executing the game:
 
-  - [x] Game is only compatible with `Windows`, `Linux`, and `MacOS`
+  - [x] Game is compatible with `Windows`, `Linux`, and `MacOS`
    1. First Method:
       - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the .zip of the entire branch into your local system using the `Code` menu in the top-right corner.
       - `Extract all` from the .zip.
