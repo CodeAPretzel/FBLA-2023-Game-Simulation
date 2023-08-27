@@ -72,21 +72,25 @@ Steps for downloading and executing the game:
 
   - [x] Game is compatible with `Windows`, `Linux`, and `MacOS`
    1. First Method:
-      - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the .zip of the entire branch into your local system using the `Code` menu in the top-right corner.
-      - `Extract all` from the .zip.
-      - Open the folder and go to the executable `Word Sorcerer Setup_x86-x64.exe` and execute it.
+      - Go to the branch <a href="https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation/tree/pull-game">`pull-game`</a> and pull the files from the entire branch into your local system using the `Code` menu in the top-right corner.
+      - `Extract` or `Execute` the game for your MacOS, Linux, or Windows system.
+      - If running on Windows, execute `Word Sorcerer Setup_x86-x64 (Windows).exe`.
       - Then follow the instructions on your screen.
       - Finally, you can play!
   
    2. Second Method:
       - Make a `git clone request` from the folder.
       - Will require <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>.
-      - Use the following request to pull the `Word Sorcerer` folder and execute `Word Sorcerer Setup_x86-x64.exe`:
+      - Use the following request to pull contents from the `pull-game` branch and execute the one correct for your system.
       <br>
       
       ```
       git clone -b pull-game https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation.git
       ```
+
+  **Important Note -**
+  <br>
+      If you are playing the game on Linux, run the command `chmod +x` on both the `UnityPlayer.so` and `Word Sorcerer (Linux).x86_64` files.
 
 <br>
 <br>
