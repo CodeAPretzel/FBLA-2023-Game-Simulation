@@ -88,6 +88,9 @@ Steps for downloading and executing the game:
       git clone -b pull-game https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation.git
       ```
 
+   3. Third Method:
+     - Install the game on [itch.io](https://codeapretzel.itch.io/word-sorcerer)
+
   **Important Note -**
   <br>
       If you are playing the game on Linux, run the command `chmod +x` on both the `UnityPlayer.so` and `Word Sorcerer (Linux).x86_64` files.
