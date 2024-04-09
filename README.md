@@ -88,7 +88,7 @@ Steps for downloading and executing the game:
       git clone -b pull-game https://github.com/CodeAPretzel/FBLA-2023-Game-Simulation.git
       ```
 
-   3. Third Method:
+  3. Third Method:
      - Install the game on [itch.io](https://codeapretzel.itch.io/word-sorcerer)
 
   **Important Note -**
